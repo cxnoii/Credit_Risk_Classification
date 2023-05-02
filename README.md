@@ -20,13 +20,13 @@ Our target feature:
 ### Methods
 Methods to create and evaluate models will be used from: 
 1. SKLearn: 
-  * train_test_split
-  * LogisticRegression
-  * confusion_matrix
-  * classification_report
+    * train_test_split
+    * LogisticRegression
+    * confusion_matrix
+    * classification_report
 
 2. imbalanced-learn
-  * RandomOverSampler
+    * RandomOverSampler
 
 The logistic regression model is a type of supervised learning. We will be using existing data in order to train a model to accurately predict the status of a loan. The data must first be split into training data and testing data to feed into the model. This means that our target variable (y) is the loan_status, and the rest of the dataset will be out features (X).  
 
