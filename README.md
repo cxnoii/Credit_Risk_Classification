@@ -18,21 +18,21 @@ Our target feature:
 
 ## Machine Learning Process
 ### Methods
-Methods to create and evaluate models will be used from: 
-1. SKLearn: 
+1. **SKLearn**: 
     * train_test_split
     * LogisticRegression
     * confusion_matrix
     * classification_report
 
-2. imbalanced-learn
+2. **imbalanced-learn**
     * RandomOverSampler
 
-The logistic regression model is a type of supervised learning. We will be using existing data in order to train a model to accurately predict the status of a loan. The data must first be split into training data and testing data to feed into the model. This means that our target variable (y) is the loan_status, and the rest of the dataset will be out features (X).  
-
-In the original dataset, 75036 loans are marked as healthy, while 2500 loans are marked as high-risk. The distribution of healthy and high-risk loans is heavily skewed; in order to ensure that the data is properly split into training and testing data, we will using the _stratify_ parameter on our target feature in the instantiation of the Logistic Regression model.
+The logistic regression model is a type of supervised learning. We will be using existing data in order to train a model to accurately predict the status of a loan. The data must first be split into training data and testing data to feed into the model. This means that our target variable (y) is the loan_status, and the rest of the dataset will be out features (X). The logistic regression model is then created and fit to the training data.
 
 ![credit_risk_Screenshot](https://user-images.githubusercontent.com/114107454/235744288-507ac467-63a9-4ec3-b0c5-c4f5c1a07d15.jpg)
 
+The model is then used to make predictions on the classification of a loan as healthy (0) or high-risk (1). These results can be evaulated through a confusion matrix and a classification report. 
+
+This process is then repeated using randomly oversampled data. In the original dataset, 75036 loans are marked as healthy, while 2500 loans are marked as high-risk. Due to the heavily imbalanced dataset, random oversampling seems to be a solid choice to test if it has an effect on the model's performance.
 
 
