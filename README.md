@@ -38,7 +38,8 @@ This process is then repeated using randomly oversampled data. In the original d
 
 ## Results
 ### Logistic Regression with Original Dataset
-![image](https://user-images.githubusercontent.com/114107454/235751055-827dc10f-094a-409e-b389-bc1eb8c49a22.png)
+![image](https://user-images.githubusercontent.com/114107454/235751252-cf808db9-d5a0-43bc-9b42-9d14b16b0e17.png)
+
 The model is correctly labeling every healthy loan, as indicated by its precision and recall scores of 1.00. These two scores suggest that the model is working perfectly in terms of classifying health loans. 
 
 On the other hand, the logistic regression model is not performing as well in classifying the high-risk loans. The model's precision score was 0.87, while the model's recall score was 0.89. 
@@ -47,6 +48,7 @@ All in all, the logistic regression model is working relatively well on this dat
 
 ### Logistic Regression with Randomly Oversampled Data
 ![image](https://user-images.githubusercontent.com/114107454/235751159-8a19c164-ab84-43cc-b8e2-ef2682a4cbf8.png)
+
 When the logistic regression model is fit with the oversampled data, it is still predicting healthy loans perfectly, as indicated by the precision and recall scores of 1.00. 
 
 The logistic regression model is now performing much better with the oversampled data in terms of classifying high-risk loans. It has a precision score of 0.87. It is now correctly predicting all the high-risk loans, as indicated by the recall score of 1.00.
