@@ -28,9 +28,8 @@ Our target feature:
     * RandomOverSampler
 
 The logistic regression model is a type of supervised learning. We will be using existing data in order to train a model to accurately predict the status of a loan. The data must first be split into training data and testing data to feed into the model. This means that our target variable (y) is the loan_status, and the rest of the dataset will be out features (X). The logistic regression model is then created and fit to the training data.
-<p align ="center">
+
 ![credit_risk_Screenshot](https://user-images.githubusercontent.com/114107454/235744288-507ac467-63a9-4ec3-b0c5-c4f5c1a07d15.jpg)
-</p>
 
 The model is then used to make predictions on the classification of a loan as healthy (0) or high-risk (1). These results can be evaulated through a confusion matrix and a classification report. 
 
